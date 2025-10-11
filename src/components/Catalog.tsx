@@ -3,12 +3,6 @@ import WatchCard from './WatchCard';
 const Catalog = () => {
   const watches = [
     {
-      name: 'Gloria Double Time',
-      collection: 'Классическая коллекция',
-      price: '₽100 000',
-      image: 'https://cdn.poehali.dev/files/6e30ac24-838e-4dab-bef4-8eb2d2346726.jpg'
-    },
-    {
       name: 'Elegance Royale',
       collection: 'Классическая коллекция',
       price: '₽850 000',
