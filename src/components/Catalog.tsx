@@ -37,6 +37,126 @@ const Catalog = () => {
       collection: 'Haute Horlogerie',
       price: '₽4 500 000',
       image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/8b1fc901-e003-4f89-b892-dc720310b483.jpg'
+    },
+    {
+      name: 'Rose Gold Slim',
+      collection: 'Классическая коллекция',
+      price: '₽920 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/9df2ffc6-d28c-4276-8fc1-59ea974212fc.jpg'
+    },
+    {
+      name: 'Aviator Classic',
+      collection: 'Пилотские часы',
+      price: '₽780 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/5d9c310a-72a6-42ed-bf6e-3cc28b221ad8.jpg'
+    },
+    {
+      name: 'Titanium Skeleton',
+      collection: 'Современные часы',
+      price: '₽1 480 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/ecd9c5fb-98b4-4173-9c45-80d1b1955256.jpg'
+    },
+    {
+      name: 'Diamond Pearl',
+      collection: 'Женская коллекция',
+      price: '₽1 850 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/faa58cac-9b94-4123-9979-a3351e4572fb.jpg'
+    },
+    {
+      name: 'Ocean Blue Diver',
+      collection: 'Спортивная коллекция',
+      price: '₽1 120 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/4d49c922-651b-4d8b-802f-9a99e58ca528.jpg'
+    },
+    {
+      name: 'GMT Explorer',
+      collection: 'Часы путешественника',
+      price: '₽1 350 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/b4a4a92b-b19b-4e7a-8517-8c0d2192c1b6.jpg'
+    },
+    {
+      name: 'Perpetual Calendar',
+      collection: 'Усложненные часы',
+      price: '₽3 200 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/a54c1cad-79f4-4543-ae31-d1215c8852cc.jpg'
+    },
+    {
+      name: 'Racing Chrono',
+      collection: 'Спортивная коллекция',
+      price: '₽1 180 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/aafb6ec5-5708-495f-bbfe-51784bdf923f.jpg'
+    },
+    {
+      name: 'Art Deco Tonneau',
+      collection: 'Винтажная коллекция',
+      price: '₽1 650 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/8709ba61-7b0c-4de9-b493-2fbd1cd97f32.jpg'
+    },
+    {
+      name: 'Platinum Guilloché',
+      collection: 'Haute Horlogerie',
+      price: '₽5 200 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/e7dc0994-3e46-44b4-9a3d-eea288c20ac9.jpg'
+    },
+    {
+      name: 'Bronze Patina Diver',
+      collection: 'Винтажная коллекция',
+      price: '₽890 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/b220021e-5aeb-4b16-a556-b4ff538db24e.jpg'
+    },
+    {
+      name: 'Bauhaus Minimal',
+      collection: 'Классическая коллекция',
+      price: '₽620 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/d2968ae9-0a35-4791-b21b-27a47abdd073.jpg'
+    },
+    {
+      name: 'Power Reserve Blue',
+      collection: 'Современные часы',
+      price: '₽1 290 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/352f260a-e8e6-45b3-8558-04ca446b615b.jpg'
+    },
+    {
+      name: 'Regulator Classic',
+      collection: 'Классическая коллекция',
+      price: '₽1 580 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/3810cc01-0edd-41b8-9014-f9514f80b0cf.jpg'
+    },
+    {
+      name: 'Carbon Racer',
+      collection: 'Спортивная коллекция',
+      price: '₽2 200 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/efa868be-e961-4915-8858-10316168ba29.jpg'
+    },
+    {
+      name: 'Calatrava Elegance',
+      collection: 'Классическая коллекция',
+      price: '₽950 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/7495dd46-8dfa-40fc-a6ee-420dead9b215.jpg'
+    },
+    {
+      name: 'World Timer',
+      collection: 'Часы путешественника',
+      price: '₽2 850 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/d6ce4164-e603-4385-8e4f-6969dc57fd83.jpg'
+    },
+    {
+      name: 'Meteorite Dial',
+      collection: 'Haute Horlogerie',
+      price: '₽6 200 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/49946ee7-2b9e-4c15-8481-fd35e38856b5.jpg'
+    },
+    {
+      name: 'Jumping Hour',
+      collection: 'Усложненные часы',
+      price: '₽2 450 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/91c3af92-1c5d-4450-bae6-90fa3f91bcef.jpg'
+    },
+    {
+      name: 'Minute Repeater',
+      collection: 'Haute Horlogerie',
+      price: '₽8 500 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/818f4ada-b19f-4a3e-a895-98c7e4182f00.jpg'
     }
   ];
 
