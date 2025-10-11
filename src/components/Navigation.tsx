@@ -6,12 +6,12 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Главная', href: '#home' },
-    { name: 'Каталог', href: '#catalog' },
-    { name: 'Коллекции', href: '#collections' },
-    { name: 'О бренде', href: '#about' },
-    { name: 'Сервис', href: '#service' },
-    { name: 'Контакты', href: '#contact' }
+    { name: 'Главная', href: '/' },
+    { name: 'Каталог', href: '/#catalog' },
+    { name: 'Коллекция Gloria', href: '/gloria' },
+    { name: 'О бренде', href: '/#about' },
+    { name: 'Сервис', href: '/#service' },
+    { name: 'Контакты', href: '/#contact' }
   ];
 
   return (
