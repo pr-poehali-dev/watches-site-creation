@@ -3,6 +3,36 @@ import WatchCard from './WatchCard';
 const Catalog = () => {
   const watches = [
     {
+      name: 'Gloria Classic Blue',
+      collection: 'Коллекция Gloria',
+      price: '₽120 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/bf210cce-057b-4f6d-8d5f-5c2c41f39870.jpg'
+    },
+    {
+      name: 'Gloria Sport Chrono',
+      collection: 'Коллекция Gloria',
+      price: '₽185 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/72dd9704-83dc-462b-b59f-618fd322c24d.jpg'
+    },
+    {
+      name: 'Gloria Lady Rose',
+      collection: 'Коллекция Gloria',
+      price: '₽145 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/77b82559-a8d4-4bce-a69f-69054fc9bea9.jpg'
+    },
+    {
+      name: 'Gloria Automatic Skeleton',
+      collection: 'Коллекция Gloria',
+      price: '₽210 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/8cdbda2d-1ed6-4d8c-8dca-b5fc9d5f8b81.jpg'
+    },
+    {
+      name: 'Gloria Diver Pro',
+      collection: 'Коллекция Gloria',
+      price: '₽165 000',
+      image: 'https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/22240cfc-5f1a-470a-b3f1-ad608f8ed664.jpg'
+    },
+    {
       name: 'Elegance Royale',
       collection: 'Классическая коллекция',
       price: '₽850 000',
