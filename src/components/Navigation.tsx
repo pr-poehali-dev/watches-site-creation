@@ -18,8 +18,12 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="#home" className="text-2xl font-bold text-primary font-serif">
-            PREMIUM TIMEPIECES
+          <a href="#home" className="flex items-center">
+            <img 
+              src="https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/c40e9f69-4192-43cb-94c4-fda5f30c80c8.jpg" 
+              alt="Premium Timepieces" 
+              className="h-12 w-auto"
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-8">

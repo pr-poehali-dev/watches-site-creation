@@ -6,9 +6,12 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          background: 'linear-gradient(135deg, #1A1A1A 0%, #3D3D3D 50%, #C9A962 100%)'
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/6dce275b-2095-4901-b1e5-eeea55ddf8cb.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
         }}
       />
+      <div className="absolute inset-0 z-0 bg-black/50" />
       
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
