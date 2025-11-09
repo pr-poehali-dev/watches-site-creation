@@ -44,7 +44,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Дата</h3>
-                  <p className="text-muted-foreground">20-31 декабря 2025</p>
+                  <p className="text-muted-foreground">25-31 декабря 2025</p>
                 </div>
               </div>
             </Card>
@@ -55,8 +55,8 @@ export default function Index() {
                   <Icon name="MapPin" size={28} className="text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Место</h3>
-                  <p className="text-muted-foreground">Ростов-на-Дону</p>
+                  <h3 className="text-xl font-bold">Формат</h3>
+                  <p className="text-muted-foreground">Онлайн турнир</p>
                 </div>
               </div>
             </Card>
@@ -78,29 +78,29 @@ export default function Index() {
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-bold">О турнире</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Турнир пройдёт с 20 по 31 декабря в Ростове-на-Дону. В конце турнира состоится награждение победителей 
-                и грандиозная вечеринка в честь Нового Года!
+                Онлайн турнир по Clash Royale с 25 по 31 декабря 2025. Играйте из любой точки мира! 
+                Игры проходят каждый день с 18:00 до 21:00. В финале — награждение и новогодняя вечеринка в Discord/Telegram.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={24} className="text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold text-lg">Формат 1v1</h4>
-                    <p className="text-muted-foreground">Классические дуэли по правилам игры</p>
+                    <h4 className="font-semibold text-lg">Классический 1v1</h4>
+                    <p className="text-muted-foreground">Система плей-офф, 5 раундов + финал</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={24} className="text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold text-lg">Для всех уровней</h4>
-                    <p className="text-muted-foreground">От новичков до профессионалов</p>
+                    <h4 className="font-semibold text-lg">Онлайн платформа</h4>
+                    <p className="text-muted-foreground">Играйте через Clash Royale + Discord/Telegram</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={24} className="text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold text-lg">Праздничная атмосфера</h4>
-                    <p className="text-muted-foreground">Новогоднее настроение и розыгрыши</p>
+                    <h4 className="font-semibold text-lg">Регистрация до 19 декабря</h4>
+                    <p className="text-muted-foreground">Успей зарегистрироваться на турнир</p>
                   </div>
                 </div>
               </div>
@@ -120,11 +120,88 @@ export default function Index() {
 
 
 
+          <div className="mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">Расписание турнира</h2>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/30 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/20 p-3 rounded-lg">
+                    <Icon name="Swords" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">25 декабря — 1-й и 2-й раунды</h3>
+                    <p className="text-muted-foreground">Игры по сетке плей-офф. Время: 18:00-21:00</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-secondary/30 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-secondary/20 p-3 rounded-lg">
+                    <Icon name="MessageSquare" size={24} className="text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">26 декабря — День отдыха</h3>
+                    <p className="text-muted-foreground">Обмен стратегиями и советами в Discord/Telegram</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/30 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/20 p-3 rounded-lg">
+                    <Icon name="Zap" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">27-28 декабря — 3-й и 4-й раунды</h3>
+                    <p className="text-muted-foreground">Продолжение турнира. Время: 18:00-21:00</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-accent/30 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/20 p-3 rounded-lg">
+                    <Icon name="Crown" size={24} className="text-accent" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">29 декабря — 5-й раунд (полуфиналы)</h3>
+                    <p className="text-muted-foreground">Решающие битвы за выход в финал. Время: 18:00-21:00</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/40 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/20 p-3 rounded-lg">
+                    <Icon name="Trophy" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">30 декабря — Финал</h3>
+                    <p className="text-muted-foreground">Главная битва турнира! Время: 18:00-21:00</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-gradient-to-br from-accent/30 to-accent/10 border-accent/50 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/30 p-3 rounded-lg">
+                    <Icon name="PartyPopper" size={24} className="text-accent" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">31 декабря — Награждение и вечеринка</h3>
+                    <p className="text-muted-foreground">Награждение победителей и новогодняя вечеринка в Discord/Telegram. Тема: «Зимние баталии и Clash Royale»</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+
           <Card className="p-12 bg-gradient-to-br from-primary/30 to-primary/10 border-primary/50 text-center animate-scale-in">
             <Icon name="Gift" size={64} className="text-primary mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Готов стать чемпионом?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Регистрация открыта до 18 декабря. Количество мест ограничено!
+              Регистрация открыта до 19 декабря. Количество мест ограничено!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold">
