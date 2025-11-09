@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { QRCodeSVG } from 'qrcode.react';
 
 export default function Index() {
   return (
@@ -140,6 +141,29 @@ export default function Index() {
           </div>
 
 
+
+          <div className="mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">QR-код для регистрации</h2>
+            <Card className="max-w-md mx-auto p-8 bg-card/80 backdrop-blur-sm border-primary/30 text-center animate-scale-in mb-20">
+              <p className="text-lg text-muted-foreground mb-6">Отсканируйте QR-код для быстрой регистрации в Telegram</p>
+              <div className="flex justify-center mb-6 bg-white p-6 rounded-xl inline-block mx-auto">
+                <QRCodeSVG 
+                  value="https://t.me/ClashRoyael2025" 
+                  size={200}
+                  level="H"
+                  includeMargin={false}
+                />
+              </div>
+              <Button 
+                size="lg" 
+                className="w-full text-lg font-bold"
+                onClick={() => window.open('https://t.me/ClashRoyael2025', '_blank')}
+              >
+                <Icon name="Send" size={20} className="mr-2" />
+                Открыть Telegram канал
+              </Button>
+            </Card>
+          </div>
 
           <div className="mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">Расписание турнира</h2>
