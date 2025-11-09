@@ -21,7 +21,7 @@ export default function Index() {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl animate-fade-in">
-              Главный турнир зимы в Ростове-на-Дону! Сразись за звание чемпиона и уникальные призы
+              Главный турнир зимы в Ростове-на-Дону с награждением и новогодней вечеринкой!
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-fade-in">
@@ -44,7 +44,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Дата</h3>
-                  <p className="text-muted-foreground">28-29 декабря 2024</p>
+                  <p className="text-muted-foreground">20-31 декабря 2025</p>
                 </div>
               </div>
             </Card>
@@ -64,11 +64,11 @@ export default function Index() {
             <Card className="p-6 bg-card/80 backdrop-blur-sm border-accent/20 hover:border-accent/50 transition-all animate-fade-in">
               <div className="flex items-center gap-4 mb-4">
                 <div className="p-3 bg-accent/20 rounded-lg">
-                  <Icon name="Trophy" size={28} className="text-accent" />
+                  <Icon name="PartyPopper" size={28} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Призовой фонд</h3>
-                  <p className="text-muted-foreground">50 000 ₽</p>
+                  <h3 className="text-xl font-bold">Финал</h3>
+                  <p className="text-muted-foreground">Новогодняя вечеринка</p>
                 </div>
               </div>
             </Card>
@@ -78,8 +78,8 @@ export default function Index() {
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-bold">О турнире</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Новогодний турнир по Clash Royale — это уникальное событие для всех фанатов игры в Ростове-на-Дону! 
-                Соберутся лучшие игроки региона, чтобы побороться за звание чемпиона и щедрые призы.
+                Турнир пройдёт с 20 по 31 декабря в Ростове-на-Дону. В конце турнира состоится награждение победителей 
+                и грандиозная вечеринка в честь Нового Года!
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -118,92 +118,13 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">Призы</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 bg-gradient-to-br from-accent/20 to-accent/5 border-accent/40 text-center transform hover:scale-105 transition-all animate-fade-in">
-                <div className="relative mb-6">
-                  <Icon name="Medal" size={64} className="text-accent mx-auto" />
-                  <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
-                </div>
-                <h3 className="text-2xl font-bold mb-2">1 место</h3>
-                <div className="text-4xl font-extrabold text-accent mb-2">25 000 ₽</div>
-                <p className="text-muted-foreground">+ Уникальный кубок</p>
-              </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-secondary/20 to-secondary/5 border-secondary/40 text-center transform hover:scale-105 transition-all animate-fade-in">
-                <div className="relative mb-6">
-                  <Icon name="Medal" size={64} className="text-secondary mx-auto" />
-                  <div className="absolute -top-2 -right-2 bg-secondary text-secondary-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
-                </div>
-                <h3 className="text-2xl font-bold mb-2">2 место</h3>
-                <div className="text-4xl font-extrabold text-secondary mb-2">15 000 ₽</div>
-                <p className="text-muted-foreground">+ Медаль чемпиона</p>
-              </Card>
-
-              <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/40 text-center transform hover:scale-105 transition-all animate-fade-in">
-                <div className="relative mb-6">
-                  <Icon name="Medal" size={64} className="text-primary mx-auto" />
-                  <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
-                </div>
-                <h3 className="text-2xl font-bold mb-2">3 место</h3>
-                <div className="text-4xl font-extrabold text-primary mb-2">10 000 ₽</div>
-                <p className="text-muted-foreground">+ Сертификат участника</p>
-              </Card>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">Расписание</h2>
-            <div className="max-w-3xl mx-auto space-y-6">
-              <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/30 animate-fade-in">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/20 p-3 rounded-lg">
-                    <Icon name="Clock" size={24} className="text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-xl font-bold">28 декабря - День 1</h3>
-                      <span className="text-sm text-muted-foreground">10:00 - 18:00</span>
-                    </div>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• 10:00 - Регистрация участников</li>
-                      <li>• 11:00 - Открытие турнира</li>
-                      <li>• 12:00 - Начало групповых этапов</li>
-                      <li>• 18:00 - Завершение первого дня</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 bg-card/80 backdrop-blur-sm border-secondary/30 animate-fade-in">
-                <div className="flex items-start gap-4">
-                  <div className="bg-secondary/20 p-3 rounded-lg">
-                    <Icon name="Clock" size={24} className="text-secondary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-xl font-bold">29 декабря - День 2</h3>
-                      <span className="text-sm text-muted-foreground">10:00 - 20:00</span>
-                    </div>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• 10:00 - Плей-офф 1/8 финала</li>
-                      <li>• 14:00 - Четвертьфиналы</li>
-                      <li>• 16:00 - Полуфиналы</li>
-                      <li>• 18:00 - Гранд-финал</li>
-                      <li>• 19:30 - Награждение победителей</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
 
           <Card className="p-12 bg-gradient-to-br from-primary/30 to-primary/10 border-primary/50 text-center animate-scale-in">
             <Icon name="Gift" size={64} className="text-primary mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Готов стать чемпионом?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Регистрация открыта до 25 декабря. Количество мест ограничено!
+              Регистрация открыта до 18 декабря. Количество мест ограничено!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold">
