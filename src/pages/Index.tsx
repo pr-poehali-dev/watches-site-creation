@@ -25,18 +25,27 @@ export default function Index() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-fade-in">
-              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold"
+                onClick={() => window.open('https://t.me/ClashRoyael2025', '_blank')}
+              >
                 <Icon name="UserPlus" size={20} className="mr-2" />
                 Зарегистрироваться
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 font-bold">
-                <Icon name="Info" size={20} className="mr-2" />
-                Подробнее
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-lg px-8 py-6 border-2 font-bold"
+                onClick={() => window.open('https://t.me/ClashRoyael2025', '_blank')}
+              >
+                <Icon name="MessageCircle" size={20} className="mr-2" />
+                Telegram канал
               </Button>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20">
             <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all animate-fade-in">
               <div className="flex items-center gap-4 mb-4">
                 <div className="p-3 bg-primary/20 rounded-lg">
@@ -64,11 +73,23 @@ export default function Index() {
             <Card className="p-6 bg-card/80 backdrop-blur-sm border-accent/20 hover:border-accent/50 transition-all animate-fade-in">
               <div className="flex items-center gap-4 mb-4">
                 <div className="p-3 bg-accent/20 rounded-lg">
-                  <Icon name="PartyPopper" size={28} className="text-accent" />
+                  <Icon name="Ticket" size={28} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Финал</h3>
-                  <p className="text-muted-foreground">Новогодняя вечеринка</p>
+                  <h3 className="text-xl font-bold">Игрок</h3>
+                  <p className="text-muted-foreground">5 000 ₽</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all animate-fade-in">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-primary/20 rounded-lg">
+                  <Icon name="Eye" size={28} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Зритель</h3>
+                  <p className="text-muted-foreground">1 000 ₽</p>
                 </div>
               </div>
             </Card>
@@ -204,13 +225,22 @@ export default function Index() {
               Регистрация открыта до 19 декабря. Количество мест ограничено!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold"
+                onClick={() => window.open('https://t.me/ClashRoyael2025', '_blank')}
+              >
                 <Icon name="Rocket" size={20} className="mr-2" />
                 Участвовать в турнире
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 font-bold">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-lg px-8 py-6 border-2 font-bold"
+                onClick={() => window.open('https://t.me/ClashRoyael2025', '_blank')}
+              >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
-                Связаться с нами
+                Telegram канал
               </Button>
             </div>
           </Card>
@@ -220,14 +250,8 @@ export default function Index() {
           <div className="container mx-auto px-4 text-center text-muted-foreground">
             <p className="mb-4">© 2024 Clash Royale Winter Championship Rostov-on-Don</p>
             <div className="flex justify-center gap-6">
-              <a href="#" className="hover:text-primary transition-colors">
-                <Icon name="Mail" size={20} />
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                <Icon name="Phone" size={20} />
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                <Icon name="MessageCircle" size={20} />
+              <a href="https://t.me/ClashRoyael2025" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                <Icon name="Send" size={20} />
               </a>
             </div>
           </div>
