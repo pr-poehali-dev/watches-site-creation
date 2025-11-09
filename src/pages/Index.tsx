@@ -133,10 +133,6 @@ export default function Index() {
                 alt="Турнир Clash Royale"
                 className="rounded-2xl shadow-2xl border border-primary/30"
               />
-              <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-xl animate-scale-in border-2 border-accent">
-                <div className="text-4xl font-extrabold">128</div>
-                <div className="text-sm font-semibold">участников</div>
-              </div>
             </div>
           </div>
 
