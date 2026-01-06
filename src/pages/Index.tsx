@@ -143,21 +143,21 @@ export default function Index() {
               <Card className="p-8 bg-gradient-to-br from-yellow-500/10 to-yellow-600/10 border-yellow-500/30 text-center animate-scale-in hover:scale-105 transition-transform">
                 <Icon name="Medal" size={48} className="text-yellow-500 mx-auto mb-4" />
                 <h3 className="text-3xl font-bold mb-2">1 место</h3>
-                <p className="text-4xl font-extrabold text-yellow-500 mb-2">50 000 ₽</p>
+                <p className="text-4xl font-extrabold text-yellow-500 mb-2">Денежный приз</p>
                 <p className="text-muted-foreground">+ Кубок чемпиона</p>
               </Card>
 
               <Card className="p-8 bg-gradient-to-br from-gray-400/10 to-gray-500/10 border-gray-400/30 text-center animate-scale-in hover:scale-105 transition-transform">
                 <Icon name="Medal" size={48} className="text-gray-400 mx-auto mb-4" />
                 <h3 className="text-3xl font-bold mb-2">2 место</h3>
-                <p className="text-4xl font-extrabold text-gray-400 mb-2">30 000 ₽</p>
+                <p className="text-4xl font-extrabold text-gray-400 mb-2">Денежный приз</p>
                 <p className="text-muted-foreground">+ Медаль</p>
               </Card>
 
               <Card className="p-8 bg-gradient-to-br from-amber-700/10 to-amber-800/10 border-amber-700/30 text-center animate-scale-in hover:scale-105 transition-transform">
                 <Icon name="Medal" size={48} className="text-amber-700 mx-auto mb-4" />
                 <h3 className="text-3xl font-bold mb-2">3 место</h3>
-                <p className="text-4xl font-extrabold text-amber-700 mb-2">20 000 ₽</p>
+                <p className="text-4xl font-extrabold text-amber-700 mb-2">Денежный приз</p>
                 <p className="text-muted-foreground">+ Медаль</p>
               </Card>
             </div>
