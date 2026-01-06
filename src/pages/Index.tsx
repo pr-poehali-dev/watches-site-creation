@@ -241,38 +241,38 @@ export default function Index() {
           </div>
         </section>
 
-        <footer className="bg-muted/50 py-12 border-t">
+        <footer className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 border-t border-primary/20">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">Контакты</h3>
-                <div className="space-y-2 text-muted-foreground">
-                  <p className="flex items-center gap-2">
-                    <Icon name="MapPin" size={18} />
-                    Ростов-на-Дону, ул. Большая Садовая, 123
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Icon name="Phone" size={18} />
-                    +7 (863) 123-45-67
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Icon name="Mail" size={18} />
-                    info@clashroyale-rnd.ru
-                  </p>
+                <h3 className="text-2xl font-bold mb-6 text-primary">📞 Контакты</h3>
+                <div className="space-y-4">
+                  <a href="tel:+79991234567" className="flex items-center gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-colors group">
+                    <div className="bg-primary/20 p-2 rounded-lg group-hover:bg-primary/30 transition-colors">
+                      <Icon name="Phone" size={20} className="text-primary" />
+                    </div>
+                    <span className="font-semibold">+7 (999) 123-45-67</span>
+                  </a>
+                  <a href="mailto:tournament@clashroyale.ru" className="flex items-center gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-colors group">
+                    <div className="bg-primary/20 p-2 rounded-lg group-hover:bg-primary/30 transition-colors">
+                      <Icon name="Mail" size={20} className="text-primary" />
+                    </div>
+                    <span className="font-semibold">tournament@clashroyale.ru</span>
+                  </a>
                 </div>
               </div>
               
               <div>
-                <h3 className="text-xl font-bold mb-4">Социальные сети</h3>
+                <h3 className="text-2xl font-bold mb-6 text-primary">🌐 Социальные сети</h3>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="icon">
-                    <Icon name="MessageCircle" size={20} />
+                  <Button variant="default" size="icon" className="h-14 w-14 bg-primary hover:bg-primary/90">
+                    <Icon name="MessageCircle" size={24} />
                   </Button>
-                  <Button variant="outline" size="icon">
-                    <Icon name="Youtube" size={20} />
+                  <Button variant="default" size="icon" className="h-14 w-14 bg-destructive hover:bg-destructive/90">
+                    <Icon name="Youtube" size={24} />
                   </Button>
-                  <Button variant="outline" size="icon">
-                    <Icon name="Instagram" size={20} />
+                  <Button variant="default" size="icon" className="h-14 w-14 bg-accent hover:bg-accent/90">
+                    <Icon name="Instagram" size={24} />
                   </Button>
                 </div>
               </div>
