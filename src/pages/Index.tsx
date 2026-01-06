@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-primary/10">
-      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/013e925b-cd4c-4152-952c-139444fa032b.jpg')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/57508d02-fce5-4be8-9f3a-4bbd9beb4bee.jpg')] bg-cover bg-center opacity-20"></div>
       
       <div className="relative">
         <section className="container mx-auto px-4 py-12 md:py-20">
@@ -17,17 +17,17 @@ export default function Index() {
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-foreground leading-tight animate-scale-in">
               Clash Royale
-              <span className="block text-primary mt-2">Ростов-на-Дону</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl animate-fade-in">
-              Главный турнир зимы! Сразись с лучшими игроками города за призовой фонд 100 000 ₽
+              Главный турнир зимы! Сразись с лучшими игроками города
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-fade-in">
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold"
+                onClick={() => window.open('https://t.me/+wWcQ5eCQB_g5YmNi', '_blank')}
               >
                 <Icon name="UserPlus" size={20} className="mr-2" />
                 Зарегистрироваться
