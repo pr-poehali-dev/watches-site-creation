@@ -118,7 +118,7 @@ export default function Index() {
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={24} className="text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold text-lg">Регистрация до 12 января</h4>
+                    <h4 className="font-semibold text-lg">Регистрация до 28 января</h4>
                     <p className="text-muted-foreground">Успей занять место в турнирной сетке</p>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function Index() {
           <Card className="p-12 bg-gradient-to-br from-primary/20 to-accent/20 border-primary/30 text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Готов принять вызов?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Регистрация открыта до 12 января. Количество мест ограничено!
+              Регистрация открыта до 28 января. Количество мест ограничено!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-10 py-6 font-bold">
