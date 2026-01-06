@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-primary/10">
-      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/57508d02-fce5-4be8-9f3a-4bbd9beb4bee.jpg')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/57508d02-fce5-4be8-9f3a-4bbd9beb4bee.jpg')] bg-cover bg-center opacity-40"></div>
       
       <div className="relative">
         <section className="container mx-auto px-4 py-12 md:py-20">
@@ -51,7 +51,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Дата</h3>
-                  <p className="text-muted-foreground">15 января 2026</p>
+                  <p className="text-muted-foreground">1 февраля 2026</p>
                 </div>
               </div>
             </Card>
@@ -75,7 +75,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Участники</h3>
-                  <p className="text-muted-foreground">До 128 игроков</p>
+                  <p className="text-muted-foreground">До 1000 игроков</p>
                 </div>
               </div>
             </Card>
@@ -87,7 +87,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Призы</h3>
-                  <p className="text-muted-foreground">100 000 ₽</p>
+                  <p className="text-muted-foreground">Денежный приз</p>
                 </div>
               </div>
             </Card>
@@ -131,8 +131,8 @@ export default function Index() {
                 className="rounded-2xl shadow-2xl border border-primary/30"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-xl animate-scale-in border-2 border-accent">
-                <div className="text-4xl font-extrabold">100K ₽</div>
-                <div className="text-sm font-semibold">Призовой фонд</div>
+                <div className="text-3xl font-extrabold line-through opacity-50">100K ₽</div>
+                <div className="text-4xl font-extrabold">Денежный приз</div>
               </div>
             </div>
           </div>
