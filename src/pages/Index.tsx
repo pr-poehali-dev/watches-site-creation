@@ -239,23 +239,6 @@ export default function Index() {
               </Card>
             </div>
           </div>
-
-          <Card className="p-12 bg-gradient-to-br from-primary/20 to-accent/20 border-primary/30 text-center animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Готов принять вызов?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Регистрация открыта до 28 января. Количество мест ограничено!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-10 py-6 font-bold">
-                <Icon name="Rocket" size={20} className="mr-2" />
-                Зарегистрироваться сейчас
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-10 py-6 font-bold border-2">
-                <Icon name="Download" size={20} className="mr-2" />
-                Скачать правила
-              </Button>
-            </div>
-          </Card>
         </section>
 
         <footer className="bg-muted/50 py-12 border-t">
