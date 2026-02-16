@@ -21,6 +21,14 @@ const films = [
     genre: "Арт-хаус",
     image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg",
   },
+  {
+    title: "Донской вояж Гитлера",
+    year: "2026",
+    genre: "Исторический триллер",
+    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/0e0cff70-934d-48a0-b0a5-3cdb6de00b76.jpg",
+    status: "В производстве",
+    synopsis: "Декабрь 1941 года. Первое крупное поражение вермахта — Красная армия выбивает немцев из Ростова-на-Дону. История о решающем моменте войны в заснеженных степях Дона.",
+  },
 ];
 
 export default function Index() {
