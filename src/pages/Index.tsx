@@ -2,32 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
-const films = [
-  {
-    title: "Тени прошлого",
-    year: "2025",
-    genre: "Драма",
-    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg",
-  },
-  {
-    title: "Последний кадр",
-    year: "2024",
-    genre: "Триллер",
-    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/ef6d5b9f-c9c5-43fb-aa3e-bafc57b184ef.jpg",
-  },
-  {
-    title: "Монохром",
-    year: "2024",
-    genre: "Арт-хаус",
-    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg",
-  },
+const projects = [
   {
     title: "Донской вояж Гитлера",
-    year: "2026",
-    genre: "Исторический триллер",
+    genre: "Исторический триллер / Реконструкция",
+    status: "В производстве (Pre-production)",
     image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/0e0cff70-934d-48a0-b0a5-3cdb6de00b76.jpg",
-    status: "В производстве",
-    synopsis: "Декабрь 1941 года. Первое крупное поражение вермахта — Красная армия выбивает немцев из Ростова-на-Дону. История о решающем моменте войны в заснеженных степях Дона.",
+    synopsis: "Декабрь 1941 года. Только что произошло первое крупное поражение вермахта во Второй мировой войне — Красная армия выбила немецкие войска из Ростова-на-Дону. В атмосфере строжайшей секретности Адольф Гитлер прибывает в окрестности донской столицы, чтобы лично встретиться с командованием и попытаться остановить отступление. Фильм погружает зрителя в напряженные дни декабря 41-го, исследуя психологию власти на грани краха и мужество тех, кто стоял на защите «Ворот Кавказа». Это история о решающем моменте войны, развернувшаяся в заснеженных степях Дона.",
+  },
+  {
+    title: "Общество летучих мышей",
+    genre: "Криминальная драма / Боевик",
+    status: "Сценарный этап (Development)",
+    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/da69b226-01be-4631-998a-b93c424e9661.jpg",
+    synopsis: "В самом сердце Ростова-на-Дону, за фасадом знаменитого доходного дома на Большой Садовой, 23, скрывается тайна. Группа единомышленников, не согласных с разгулом преступности, объединяется в «Общество летучих мышей». Свое название и символ — маски летучих мышей, украшающие их штаб-квартиру — они выбрали не случайно. Фильм рассказывает о борьбе за справедливость на улицах южного мегаполиса, где тени прошлого переплетаются с жестокой реальностью настоящего.",
   },
 ];
 
@@ -135,32 +123,38 @@ export default function Index() {
 
       <section id="films" className="py-28 border-t border-white/10">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">Портфолио</p>
-            <h2 className="text-4xl md:text-5xl font-bold">Избранные работы</h2>
+          <div className="text-center mb-6">
+            <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">В производстве</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Наши проекты</h2>
           </div>
+          <p className="text-center text-white/50 max-w-2xl mx-auto mb-16 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+            Мы гордимся тем, что работаем над историями, которые оживляют легенды и раскрывают забытые страницы истории нашего края
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {films.map((film, i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className="relative overflow-hidden mb-6">
+          <div className="space-y-24">
+            {projects.map((project, i) => (
+              <div key={i} className={`grid md:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
+                <div className="relative group overflow-hidden" style={{ direction: "ltr" }}>
                   <img
-                    src={film.image}
-                    alt={film.title}
-                    className="w-full aspect-[2/3] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
-                      <Icon name="Play" size={24} className="text-white ml-1" />
-                    </div>
+                  <div className="absolute inset-0 border border-white/10" />
+                </div>
+                <div style={{ direction: "ltr" }}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-xs tracking-[0.2em] uppercase px-3 py-1 border border-white/20 text-white/60">
+                      {project.status}
+                    </span>
                   </div>
+                  <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">{project.title}</h3>
+                  <p className="text-sm tracking-[0.15em] uppercase text-white/40 mb-6">{project.genre}</p>
+                  <div className="w-12 h-px bg-white/20 mb-6" />
+                  <p className="text-white/60 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    {project.synopsis}
+                  </p>
                 </div>
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs tracking-[0.2em] uppercase text-white/40">{film.year}</span>
-                  <span className="w-4 h-px bg-white/30" />
-                  <span className="text-xs tracking-[0.2em] uppercase text-white/40">{film.genre}</span>
-                </div>
-                <h3 className="text-2xl font-bold group-hover:text-white/80 transition-colors">{film.title}</h3>
               </div>
             ))}
           </div>
