@@ -29,7 +29,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-6 py-5 flex items-center justify-between">
           <a href="#" className="text-2xl font-bold tracking-[0.3em] uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Lumière
+            Don sinema
           </a>
           <div className="hidden md:flex items-center gap-10 text-sm tracking-[0.15em] uppercase text-white/70">
             <a href="#about" className="hover:text-white transition-colors">О нас</a>
@@ -57,7 +57,7 @@ export default function Index() {
           <div className="w-16 h-px bg-white/50 mx-auto mb-8" />
           <p className="text-sm tracking-[0.4em] uppercase text-white/60 mb-6">Киностудия</p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-[0.9] tracking-tight">
-            Lumière
+            Don sinema
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
             Создаём кино, которое остаётся в памяти. Авторское видение, безупречное исполнение, истории, меняющие мир.
@@ -89,7 +89,7 @@ export default function Index() {
               </h2>
               <div className="space-y-6 text-white/60 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                 <p>
-                  Студия Lumière — это команда режиссёров, операторов и продюсеров,
+                  Студия Don sinema — это команда режиссёров, операторов и продюсеров,
                   объединённых страстью к кинематографу. Мы создаём полнометражные фильмы,
                   короткий метр и рекламные ролики.
                 </p>
@@ -197,7 +197,7 @@ export default function Index() {
                 «Кино — это не то, что вы видите на экране. Это то, что вы чувствуете внутри»
               </blockquote>
               <div className="w-12 h-px bg-white/30 mx-auto mb-4" />
-              <p className="text-sm tracking-[0.2em] uppercase text-white/40">Философия Lumière</p>
+              <p className="text-sm tracking-[0.2em] uppercase text-white/40">Философия Don sinema</p>
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-xl font-bold tracking-[0.3em] uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Lumière
+              Don sinema
             </div>
             <div className="flex gap-8">
               {["Instagram", "Youtube", "Send"].map((icon) => (
@@ -276,7 +276,7 @@ export default function Index() {
               ))}
             </div>
             <p className="text-xs text-white/30 tracking-wider" style={{ fontFamily: "'Inter', sans-serif" }}>
-              © 2026 Lumière Studio
+              © 2026 Don sinema Studio
             </p>
           </div>
         </div>
