@@ -60,7 +60,7 @@ export default function Index() {
             Don sinema
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Создаём кино, которое остаётся в памяти. Авторское видение, безупречное исполнение, истории, меняющие мир.
+            Мы не просто делаем кино — мы создаем миры
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-white text-black hover:bg-white/90 px-10 py-6 text-sm tracking-[0.2em] uppercase font-semibold">
