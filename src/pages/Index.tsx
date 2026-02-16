@@ -2,261 +2,285 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
+const films = [
+  {
+    title: "Тени прошлого",
+    year: "2025",
+    genre: "Драма",
+    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg",
+  },
+  {
+    title: "Последний кадр",
+    year: "2024",
+    genre: "Триллер",
+    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/ef6d5b9f-c9c5-43fb-aa3e-bafc57b184ef.jpg",
+  },
+  {
+    title: "Монохром",
+    year: "2024",
+    genre: "Арт-хаус",
+    image: "https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg",
+  },
+];
+
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/82ff416f-8f82-447d-95db-b2f839f5c051.jpg')] bg-cover bg-center opacity-20"></div>
-      
-      <div className="relative">
-        <section className="container mx-auto px-4 py-12 md:py-20">
-          <div className="flex flex-col items-center text-center space-y-8 mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 rounded-full text-orange-400 font-semibold text-sm border border-orange-500/30">
-              <Icon name="Snowflake" size={18} />
-              <span>Зимний Турнир 2026</span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
-              PUBG Winter Cup
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
-              Самый масштабный зимний турнир по PUBG. Покажи, кто настоящий выживший!
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 bg-orange-600 hover:bg-orange-700 font-bold text-white"
-              >
-                <Icon name="UserPlus" size={20} className="mr-2" />
-                Зарегистрироваться
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-6 border-2 border-white/30 font-bold text-white hover:bg-white/10"
-              >
-                <Icon name="MessageCircle" size={20} className="mr-2" />
-                Связаться с нами
-              </Button>
-            </div>
+    <div className="min-h-screen bg-black text-white">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div className="container mx-auto px-6 py-5 flex items-center justify-between">
+          <a href="#" className="text-2xl font-bold tracking-[0.3em] uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Lumière
+          </a>
+          <div className="hidden md:flex items-center gap-10 text-sm tracking-[0.15em] uppercase text-white/70">
+            <a href="#about" className="hover:text-white transition-colors">О нас</a>
+            <a href="#films" className="hover:text-white transition-colors">Фильмы</a>
+            <a href="#services" className="hover:text-white transition-colors">Услуги</a>
+            <a href="#contact" className="hover:text-white transition-colors">Контакты</a>
           </div>
+          <Button variant="outline" className="border-white/30 text-white hover:bg-white hover:text-black transition-all tracking-widest uppercase text-xs px-6 py-5">
+            Связаться
+          </Button>
+        </div>
+      </nav>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20">
-            <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-orange-500/20 hover:border-orange-500/50 transition-all">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-orange-500/20 rounded-lg">
-                  <Icon name="Calendar" size={28} className="text-orange-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Дата старта</h3>
-                  <p className="text-gray-400">15 февраля 2026</p>
-                </div>
-              </div>
-            </Card>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg"
+            alt="Cinema"
+            className="w-full h-full object-cover grayscale opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black" />
+        </div>
 
-            <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-blue-500/20 hover:border-blue-500/50 transition-all">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-blue-500/20 rounded-lg">
-                  <Icon name="Gamepad2" size={28} className="text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Формат</h3>
-                  <p className="text-gray-400">Squad TPP</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-green-500/20 hover:border-green-500/50 transition-all">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-green-500/20 rounded-lg">
-                  <Icon name="Users" size={28} className="text-green-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Команды</h3>
-                  <p className="text-gray-400">До 64 команд</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-yellow-500/20 hover:border-yellow-500/50 transition-all">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-yellow-500/20 rounded-lg">
-                  <Icon name="Trophy" size={28} className="text-yellow-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Призовой фонд</h3>
-                  <p className="text-gray-400">500 000 ₽</p>
-                </div>
-              </div>
-            </Card>
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <div className="w-16 h-px bg-white/50 mx-auto mb-8" />
+          <p className="text-sm tracking-[0.4em] uppercase text-white/60 mb-6">Киностудия</p>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-[0.9] tracking-tight">
+            Lumière
+          </h1>
+          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
+            Создаём кино, которое остаётся в памяти. Авторское видение, безупречное исполнение, истории, меняющие мир.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-white text-black hover:bg-white/90 px-10 py-6 text-sm tracking-[0.2em] uppercase font-semibold">
+              Смотреть шоурил
+              <Icon name="Play" size={16} className="ml-2" />
+            </Button>
+            <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-10 py-6 text-sm tracking-[0.2em] uppercase">
+              Наши работы
+            </Button>
           </div>
+          <div className="w-16 h-px bg-white/50 mx-auto mt-12" />
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-white">О турнире</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Зимний турнир по PUBG соберет лучшие команды для битвы за выживание. 
-                Снежные карты, напряженные перестрелки и крупный призовой фонд ждут участников!
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={24} className="text-orange-400 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-lg text-white">Формат Squad TPP</h4>
-                    <p className="text-gray-400">Команды по 4 человека, вид от третьего лица</p>
-                  </div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <Icon name="ChevronDown" size={24} className="text-white/40" />
+        </div>
+      </section>
+
+      <section id="about" className="py-28 border-t border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">О студии</p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+                Искусство движущегося изображения
+              </h2>
+              <div className="space-y-6 text-white/60 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <p>
+                  Студия Lumière — это команда режиссёров, операторов и продюсеров,
+                  объединённых страстью к кинематографу. Мы создаём полнометражные фильмы,
+                  короткий метр и рекламные ролики.
+                </p>
+                <p>
+                  Каждый проект — это уникальная история. Мы работаем с естественным светом,
+                  выбираем нестандартные локации и уделяем внимание каждой детали кадра.
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">
+                <div>
+                  <div className="text-4xl font-bold">47</div>
+                  <div className="text-xs tracking-[0.2em] uppercase text-white/40 mt-1">Фильмов</div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={24} className="text-orange-400 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-lg text-white">Онлайн-трансляция</h4>
-                    <p className="text-gray-400">Прямой эфир всех матчей с комментариями</p>
-                  </div>
+                <div>
+                  <div className="text-4xl font-bold">12</div>
+                  <div className="text-xs tracking-[0.2em] uppercase text-white/40 mt-1">Наград</div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={24} className="text-orange-400 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-lg text-white">Регистрация до 10 февраля</h4>
-                    <p className="text-gray-400">Заполни форму и подготовь свою команду</p>
-                  </div>
+                <div>
+                  <div className="text-4xl font-bold">8</div>
+                  <div className="text-xs tracking-[0.2em] uppercase text-white/40 mt-1">Лет опыта</div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/82ff416f-8f82-447d-75db-b2f839f5c051.jpg" 
-                alt="PUBG Winter Cup"
-                className="rounded-2xl shadow-2xl border border-orange-500/30"
+              <img
+                src="https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/ef6d5b9f-c9c5-43fb-aa3e-bafc57b184ef.jpg"
+                alt="Film production"
+                className="w-full aspect-[3/4] object-cover grayscale"
               />
-              <div className="absolute -bottom-6 -right-6 bg-orange-600 text-white p-6 rounded-xl shadow-xl border-2 border-orange-500">
-                <div className="text-sm font-semibold opacity-80">Призовой фонд</div>
-                <div className="text-4xl font-extrabold">500K ₽</div>
+              <div className="absolute inset-0 border border-white/10" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="films" className="py-28 border-t border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">Портфолио</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Избранные работы</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {films.map((film, i) => (
+              <div key={i} className="group cursor-pointer">
+                <div className="relative overflow-hidden mb-6">
+                  <img
+                    src={film.image}
+                    alt={film.title}
+                    className="w-full aspect-[2/3] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
+                      <Icon name="Play" size={24} className="text-white ml-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-xs tracking-[0.2em] uppercase text-white/40">{film.year}</span>
+                  <span className="w-4 h-px bg-white/30" />
+                  <span className="text-xs tracking-[0.2em] uppercase text-white/40">{film.genre}</span>
+                </div>
+                <h3 className="text-2xl font-bold group-hover:text-white/80 transition-colors">{film.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-28 border-t border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">Что мы делаем</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Услуги</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10">
+            {[
+              { icon: "Film", title: "Полный метр", desc: "Производство полнометражных художественных и документальных фильмов" },
+              { icon: "Clapperboard", title: "Короткий метр", desc: "Авторские короткометражные фильмы и фестивальное кино" },
+              { icon: "Video", title: "Реклама", desc: "Рекламные ролики и имиджевые видео для брендов" },
+              { icon: "Camera", title: "Постпродакшн", desc: "Монтаж, цветокоррекция, звуковой дизайн и VFX" },
+            ].map((service, i) => (
+              <Card key={i} className="bg-black border-0 p-10 hover:bg-white/5 transition-colors duration-500 rounded-none group">
+                <Icon name={service.icon} size={32} className="text-white/40 group-hover:text-white transition-colors mb-6" />
+                <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>{service.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 border-t border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="relative overflow-hidden">
+            <img
+              src="https://cdn.poehali.dev/projects/5a51ca20-62e1-4081-b652-a5a4a98981a7/files/be0491e2-a2fa-454d-ab3d-2dd936d3acb3.jpg"
+              alt="Quote background"
+              className="absolute inset-0 w-full h-full object-cover grayscale opacity-15"
+            />
+            <div className="relative py-20 px-8 text-center">
+              <Icon name="Quote" size={48} className="text-white/20 mx-auto mb-8" />
+              <blockquote className="text-2xl md:text-4xl font-light italic max-w-3xl mx-auto leading-relaxed mb-8">
+                «Кино — это не то, что вы видите на экране. Это то, что вы чувствуете внутри»
+              </blockquote>
+              <div className="w-12 h-px bg-white/30 mx-auto mb-4" />
+              <p className="text-sm tracking-[0.2em] uppercase text-white/40">Философия Lumière</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-28 border-t border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <p className="text-xs tracking-[0.4em] uppercase text-white/40 mb-4">Контакты</p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">Давайте создадим что-то великое</h2>
+              <p className="text-white/50 leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
+                Мы открыты для новых проектов и сотрудничества. Расскажите нам о вашей идее,
+                и мы поможем воплотить её на экране.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <Icon name="Mail" size={20} className="text-white/40" />
+                  <span className="text-white/70" style={{ fontFamily: "'Inter', sans-serif" }}>hello@lumiere-studio.ru</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Icon name="Phone" size={20} className="text-white/40" />
+                  <span className="text-white/70" style={{ fontFamily: "'Inter', sans-serif" }}>+7 (495) 123-45-67</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Icon name="MapPin" size={20} className="text-white/40" />
+                  <span className="text-white/70" style={{ fontFamily: "'Inter', sans-serif" }}>Москва, ул. Мосфильмовская, 1</span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Призовые места</h2>
-            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <Card className="p-8 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 border-yellow-500/40 text-center hover:scale-105 transition-transform">
-                <Icon name="Medal" size={48} className="text-yellow-400 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold mb-2 text-white">1 место</h3>
-                <p className="text-4xl font-extrabold text-yellow-400 mb-2">250 000 ₽</p>
-                <p className="text-gray-400">+ Кубок чемпиона</p>
-              </Card>
-
-              <Card className="p-8 bg-gradient-to-br from-gray-400/20 to-gray-500/20 border-gray-400/40 text-center hover:scale-105 transition-transform">
-                <Icon name="Medal" size={48} className="text-gray-300 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold mb-2 text-white">2 место</h3>
-                <p className="text-4xl font-extrabold text-gray-300 mb-2">150 000 ₽</p>
-                <p className="text-gray-400">+ Медаль</p>
-              </Card>
-
-              <Card className="p-8 bg-gradient-to-br from-orange-700/20 to-orange-800/20 border-orange-700/40 text-center hover:scale-105 transition-transform">
-                <Icon name="Medal" size={48} className="text-orange-600 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold mb-2 text-white">3 место</h3>
-                <p className="text-4xl font-extrabold text-orange-600 mb-2">100 000 ₽</p>
-                <p className="text-gray-400">+ Медаль</p>
-              </Card>
+            <div className="space-y-6">
+              <div>
+                <label className="text-xs tracking-[0.2em] uppercase text-white/40 block mb-3">Имя</label>
+                <input
+                  type="text"
+                  className="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:border-white/60 outline-none transition-colors"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div>
+                <label className="text-xs tracking-[0.2em] uppercase text-white/40 block mb-3">Email</label>
+                <input
+                  type="email"
+                  className="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:border-white/60 outline-none transition-colors"
+                  placeholder="email@example.com"
+                />
+              </div>
+              <div>
+                <label className="text-xs tracking-[0.2em] uppercase text-white/40 block mb-3">Сообщение</label>
+                <textarea
+                  rows={4}
+                  className="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:border-white/60 outline-none transition-colors resize-none"
+                  placeholder="Расскажите о вашем проекте..."
+                />
+              </div>
+              <Button className="bg-white text-black hover:bg-white/90 px-10 py-6 text-sm tracking-[0.2em] uppercase font-semibold w-full mt-4">
+                Отправить
+                <Icon name="ArrowRight" size={16} className="ml-2" />
+              </Button>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Правила участия</h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-orange-500/20">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-orange-500/20 rounded-lg">
-                    <Icon name="Shield" size={28} className="text-orange-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Требования к команде</h3>
-                    <ul className="space-y-2 text-gray-400">
-                      <li>• Команда из 4 основных игроков</li>
-                      <li>• 1 запасной игрок</li>
-                      <li>• Все игроки старше 16 лет</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-blue-500/20">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-500/20 rounded-lg">
-                    <Icon name="Target" size={28} className="text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Система очков</h3>
-                    <ul className="space-y-2 text-gray-400">
-                      <li>• 15 очков за победу в матче</li>
-                      <li>• 1 очко за каждое убийство</li>
-                      <li>• 6 матчей в групповом этапе</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-green-500/20">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-green-500/20 rounded-lg">
-                    <Icon name="Map" size={28} className="text-green-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Карты турнира</h3>
-                    <ul className="space-y-2 text-gray-400">
-                      <li>• Erangel (зимняя версия)</li>
-                      <li>• Vikendi</li>
-                      <li>• Miramar</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 bg-slate-800/80 backdrop-blur-sm border-purple-500/20">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-purple-500/20 rounded-lg">
-                    <Icon name="Clock" size={28} className="text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Расписание</h3>
-                    <ul className="space-y-2 text-gray-400">
-                      <li>• Групповой этап: 15-16 февраля</li>
-                      <li>• Плей-офф: 22-23 февраля</li>
-                      <li>• Финал: 1 марта</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
+      <footer className="border-t border-white/10 py-12">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-xl font-bold tracking-[0.3em] uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Lumière
             </div>
-          </div>
-
-          <div className="text-center space-y-6 bg-gradient-to-r from-orange-600/20 to-red-600/20 p-12 rounded-3xl border border-orange-500/30">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">Готов к битве?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Регистрация открыта! Собери команду, заполни форму и докажи, что ты лучший выживший этой зимы.
+            <div className="flex gap-8">
+              {["Instagram", "Youtube", "Send"].map((icon) => (
+                <a key={icon} href="#" className="text-white/30 hover:text-white transition-colors">
+                  <Icon name={icon} size={20} />
+                </a>
+              ))}
+            </div>
+            <p className="text-xs text-white/30 tracking-wider" style={{ fontFamily: "'Inter', sans-serif" }}>
+              © 2026 Lumière Studio
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-10 py-7 bg-orange-600 hover:bg-orange-700 font-bold text-white"
-            >
-              <Icon name="UserPlus" size={24} className="mr-2" />
-              Зарегистрировать команду
-            </Button>
           </div>
-        </section>
-
-        <footer className="container mx-auto px-4 py-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
-            <p>© 2026 PUBG Winter Cup. Все права защищены.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Правила</a>
-              <a href="#" className="hover:text-white transition-colors">Контакты</a>
-              <a href="#" className="hover:text-white transition-colors">FAQ</a>
-            </div>
-          </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   );
 }
